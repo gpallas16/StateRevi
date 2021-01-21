@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StateRecyclerView">>
+        <attr name="emptyCaption" format="string"/>
+        <attr name="emptyIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>

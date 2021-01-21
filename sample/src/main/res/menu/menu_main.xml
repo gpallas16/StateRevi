@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/simple"
+        android:title="Simple"
+        />
+
+    <item
+        android:id="@+id/global"
+        android:title="Global"
+        />
+
+    <item
+        android:id="@+id/custom"
+        android:title="Custom"
+        />
+
+    <item
+        android:id="@+id/diff"
+        android:title="DiffUtil Adapter"
+        />
+</menu>
