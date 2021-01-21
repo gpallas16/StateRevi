@@ -2,6 +2,8 @@
 
 StateRevi is a ``` RecyclerView ``` replacement which contains states based on its current content. If it's adapter does not have a list yet, a loading view is shown instead and if adapter's list is empty, a view with image and text (or anything you want). Migration from ``` RecyclerView ``` to ``` StateRevi ``` is literally 2 words (and removing some boilerplate probably). Replace your ```RecyclerView``` with ```StateRevi```, extend your adapter to ```StateReviAdapter```, pass the type your list will use and you are good to go.
 
+![Preview](/image/preview.gif)
+
 ## Usage
 For a full demo of this project see the sample/ folder.
 
