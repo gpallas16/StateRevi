@@ -47,15 +47,14 @@ For a full demo of this project see the sample/ folder.
     }
     ```
      > Note: You don't have to hold a reference to your list, as it's internally stored and can be accessed with getList() method.
-3. Bind amd populate your data to the adapter
+3. Bind and populate your data to the adapter
     ```sh
     stateRevi.setAdapter(sampleAdapter);
     sampleAdapter.setList(yourItemList);
     ```
 
 ## Customization
-* Use custom loading and empty view
-If you don't want to use the default view and you can replace them with you own.
+* Use custom loading and empty view if you don't want to use the default ones.
     * Custom loading view
         ```sh
         stateRevi.setLoadingStateView(
@@ -82,8 +81,8 @@ If you don't want to use the default view and you can replace them with you own.
         ```
     > Note: For better perfomance set your views before setting an adapter. Doing otherwise will cause a rerender.
 
-* Default icon, text and views
-Too lazy to write everytime your empty captions and icons or setting up you views? Yeah, me too. Just use the global setter and all your StateRecyclerViews will default to those.
+* Default icon, text and views.
+Too lazy to write everytime your empty captions and icons or setting up you views? Yeah, me too. Just use the global setter and all your StateRevies will default to those.
     ```sh
     StateReviResHandler.setGlobalDefaultCaption("Global caption");
     StateReviResHandler.setGlobalDefaultIcon(R.drawable.ic_global);
@@ -98,7 +97,7 @@ StateRevi contains three states
 * State.DATA
 
 StateRevi by default starts with ```State.LOADING```,  showing the loading view. Once the adapter.setList(list) runs, the state changes to either ``` State.EMPTY ``` or ``` State.DATA```, depending on the list being empty or not.
-If want to show the loading view again (i.e. swipe up refresh) you can set the ```State.LOADING``` manually via ```stateRevi.setState(StateRevi.State.LOADING)``` or by setting a null list to the adapter.
+If you want to show the loading view again (i.e. swipe up refresh) you can set the ```State.LOADING``` manually via ```stateRevi.setState(StateRevi.State.LOADING)``` or by setting a null list to the adapter.
 
 
 # DiffUtil
