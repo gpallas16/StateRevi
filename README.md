@@ -102,7 +102,7 @@ If you want to show the loading view again (i.e. swipe up refresh) you can set t
 
 # DiffUtil
 All sounds good but if the setList() is final how do you apply a DiffUtil? All pretty simple here too.
-Juse override function getDiffResult in you adapter and you are ready.
+Just override function getDiffResult in you adapter and you are ready.
 ```sh
 public class DiffUtilReviAdapter extends StateReviAdapter<YourListItemModel, YourViewHolder> {
     ...
