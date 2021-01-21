@@ -4,6 +4,23 @@ StateRevi is a ``` RecyclerView ``` replacement which contains states based on i
 
 ![Preview](/image/preview.gif)
 
+## Implementaton
+1. On root build.gradle
+```sh
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2. On app's gradle
+```sh
+dependencies {
+	    implementation 'com.github.gpallas16:StateRevi:$latest_ver'
+	}
+```
+
 ## Usage
 For a full demo of this project see the sample/ folder.
 
