@@ -8,17 +8,17 @@ StateRevi is a ``` RecyclerView ``` replacement which contains states based on i
 1. On root build.gradle
 ```sh
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+   repositories { 
+       ...
+       maven { url 'https://jitpack.io' }
+   }
+}
 ```
 2. On app's gradle
 ```sh
 dependencies {
-	    implementation 'com.github.gpallas16:StateRevi:$latest_ver'
-	}
+    implementation 'com.github.gpallas16:StateRevi:$latest_ver'
+}
 ```
 
 ## Usage
