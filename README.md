@@ -119,27 +119,27 @@ public class DiffUtilReviAdapter extends StateReviAdapter<YourListItemModel, You
 ## StateRevi
 | Method | Usage |
 | ------ | ------ |
-| public void setAdapter(@Nullable Adapter adapter) | Attaches adapter to StateRevi. |
-| public void setState(@State int state) | Sets a StateRevi.State to StateRevi. |
+| setAdapter(@Nullable Adapter adapter) | Attaches adapter to StateRevi. |
+| setState(@State int state) | Sets a StateRevi.State to StateRevi. |
 | setLoadingStateView(LoadingStateView loadingStateView) | Sets a custom loading view for this StateRevi instance. Overrides the global loading view. |
-| public void setEmptyStateView(EmptyStateView emptyStateView) |  Sets a custom empty view for this StateRevi instance. Overrides the global empty view. |
-| public void setEmptyCaption(String caption) | Equivalent to xml app:emptyCaption. Sets the text to be used when empty view is showing. |
-| public void setEmptyIcon(Drawable icon) | Equivalent to xml app:emptyIcon. Sets the icon to be used when empty view is showing. |
+| setEmptyStateView(EmptyStateView emptyStateView) |  Sets a custom empty view for this StateRevi instance. Overrides the global empty view. |
+| setEmptyCaption(String caption) | Equivalent to xml app:emptyCaption. Sets the text to be used when empty view is showing. |
+| setEmptyIcon(Drawable icon) | Equivalent to xml app:emptyIcon. Sets the icon to be used when empty view is showing. |
 
 ## StateReviAdapter
 | Method | Usage |
 | ------ | ------ |
-| public final void setList(@Nullable List<T> items) | Sets a list to adapter. |
-| public List<T> getList() | Returns the current list showing. |
-| protected DiffUtil.DiffResult getDiffResult(List<T> oldList, List<T> newList) | Override to add DiffUtil functionality. |
+| setList(@Nullable List<T> items) | Sets a list to adapter. |
+| List<T> getList() | Returns the current list showing. |
+| DiffUtil.DiffResult getDiffResult(List<T> oldList, List<T> newList) | Override to add DiffUtil functionality. |
 
 ## StateReviResHandler
 | Method | Usage |
 | ------ | ------ |
-| public static void setGlobalCustomLoadingView(LoadingStateView customLoadingView) | Sets a custom loading view to be used as a default on any StateRevi instance. |
-| public static void setGlobalCustomEmptyView(EmptyStateView customEmptyView) | Sets a custom empty view to be used as a default on any StateRevi instance. |
-| public static void setGlobalDefaultIcon(int icon) | Sets an icon to be used as a default on any StateRevi instance. |
-| public static void setGlobalDefaultCaption(int icon) | Sets an text to be used as a default on any StateRevi instance. |
+| setGlobalCustomLoadingView(LoadingStateView customLoadingView) | Sets a custom loading view to be used as a default on any StateRevi instance. |
+| setGlobalCustomEmptyView(EmptyStateView customEmptyView) | Sets a custom empty view to be used as a default on any StateRevi instance. |
+| setGlobalDefaultIcon(int icon) | Sets an icon to be used as a default on any StateRevi instance. |
+| setGlobalDefaultCaption(int icon) | Sets an text to be used as a default on any StateRevi instance. |
 
 # License
 ```sh
