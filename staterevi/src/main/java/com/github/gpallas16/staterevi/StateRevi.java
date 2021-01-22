@@ -141,14 +141,21 @@ public class StateRevi extends RecyclerView {
                     emptyView.setTag(getEmptyTag());
                 }
 
+                if (emptyStateView.getCaptionId() != EmptyStateView.UNDEFINED_ID) {
+                    TextView captionView = emptyView.findViewById(emptyStateView.getCaptionId());
+                    if (!captionView.getText().toString().equals(caption))
+                        captionView.setText(caption);
+                }
+
+                if (emptyStateView.getIconId() != EmptyStateView.UNDEFINED_ID) {
+                    ImageView iconView = emptyView.findViewById(emptyStateView.getIconId());
+                    if (iconView.getDrawable() != icon)
+                        iconView.setImageDrawable(icon);
+                }
+
                 if (parent.findViewWithTag(getEmptyTag()) != null)
                     return;
 
-                if (emptyStateView.getCaptionId() != EmptyStateView.UNDEFINED_ID)
-                    ((TextView) emptyView.findViewById(emptyStateView.getCaptionId())).setText(caption);
-
-                if (emptyStateView.getIconId() != EmptyStateView.UNDEFINED_ID)
-                    ((ImageView) emptyView.findViewById(emptyStateView.getIconId())).setImageDrawable(icon);
 
                 replaceView(parent, emptyView, viewToReplace, true);
                 break;
