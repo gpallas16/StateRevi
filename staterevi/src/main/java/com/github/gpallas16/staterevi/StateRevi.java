@@ -189,12 +189,18 @@ public class StateRevi extends RecyclerView {
 
     public void setEmptyCaption(String caption) {
         this.caption = caption;
-        internalUpdate();
+        TextView captionView = emptyView.findViewById(emptyStateView.getCaptionId());
+        if (!captionView.getText().toString().equals(caption))
+            captionView.setText(caption);
     }
 
     public void setEmptyIcon(Drawable icon) {
         this.icon = icon;
-        internalUpdate();
+        if (lastState == State.EMPTY && emptyView != null) {
+            ImageView iconView = emptyView.findViewById(emptyStateView.getIconId());
+            if (iconView.getDrawable() != icon)
+                iconView.setImageDrawable(icon);
+        }
     }
 
     private void internalUpdate() {
