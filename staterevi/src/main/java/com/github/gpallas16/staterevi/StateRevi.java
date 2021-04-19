@@ -189,6 +189,10 @@ public class StateRevi extends RecyclerView {
 
     public void setEmptyCaption(String caption) {
         this.caption = caption;
+
+        if (emptyView == null)
+            return;
+        
         TextView captionView = emptyView.findViewById(emptyStateView.getCaptionId());
 
         if (captionView == null)
